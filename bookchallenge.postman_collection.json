@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "cca68097-8709-4152-87e8-b25da05f96d5",
+		"name": "bookchallenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10997997"
+	},
+	"item": [
+		{
+			"name": "Modify_Reservation",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "stayFrom",
+						"value": "2022-07-10",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"reservation\": {\r\n        \"id\": 2,\r\n        \"guestName\": \"Karinne Muniz\",\r\n        \"guestEmail\": \"karinne.muniz@gmail.com\",\r\n        \"guestPhone\": \"5561981184822\",\r\n        \"status\": 1\r\n    },\r\n    \"rooms\": [\r\n        {\r\n            \"id\": 1,\r\n            \"room\": {\r\n                \"id\": 12,\r\n                \"roomView\": \"Sea View\"\r\n            },\r\n            \"stayFrom\": [\r\n                2022,\r\n                7,\r\n                9\r\n            ],\r\n            \"stayTo\": [\r\n                2022,\r\n                7,\r\n                11\r\n            ],\r\n            \"status\": 1\r\n        }\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/reservation/modify?id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"reservation",
+						"modify"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cancel_Reservation",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "stayFrom",
+						"value": "2022-07-10",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/reservation/cancel?id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"reservation",
+						"cancel"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Reservation",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "stayFrom",
+						"value": "2022-07-10",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/reservation/searchReservation?idReservation=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"reservation",
+						"searchReservation"
+					],
+					"query": [
+						{
+							"key": "idReservation",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_Reservation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "stayFrom",
+						"value": "2022-07-10",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"reservation\": {\r\n        \r\n        \"guestName\": \"Karinne Muniz\",\r\n        \"guestEmail\": \"karinne.muniz@gmail.com\",\r\n        \"guestPhone\": \"5561981184822\",\r\n        \"status\": 1\r\n    },\r\n    \"rooms\": [\r\n        {\r\n            \"id\": 1,\r\n            \"room\": {\r\n                \"id\": 12,\r\n                \"roomView\": \"Sea View\"\r\n            },\r\n            \"stayFrom\": [\r\n                2022,\r\n                7,\r\n                30\r\n            ],\r\n            \"stayTo\": [\r\n                2022,\r\n                7,\r\n                1\r\n            ],\r\n            \"status\": 1\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/reservation/book=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"reservation",
+						"book=1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
