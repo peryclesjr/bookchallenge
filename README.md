@@ -1,4 +1,4 @@
-# Project Alten - Hotel Book Challenge
+# Project - Hotel Book Challenge
 
 ###  Post-Covid scenario:
 People are now free to travel everywhere but because of the pandemic, a lot of hotels  wentbankrupt. Some former famous travel places are left with only one hotel.You’ve been given the responsibility 
