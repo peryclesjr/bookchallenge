@@ -39,6 +39,7 @@ When run for the first time we have create a database from flyway.
 ## Swagger about the API
 http://server_IPAdress:Port/swagger-ui/index.html
 
+![image](https://user-images.githubusercontent.com/36196458/178511038-9910d5b9-6f8f-4c6e-ac22-3aefc613bfca.png)
 
 
 illustrative swagger picture
