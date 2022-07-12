@@ -52,6 +52,7 @@ illustrative swagger picture
 - Here we have a image of the ER Diagram of the application database. 
 
 
+![image](https://user-images.githubusercontent.com/36196458/178511499-3136afbf-bdf9-421e-b135-41c06244fbcf.png)
 
 
 
