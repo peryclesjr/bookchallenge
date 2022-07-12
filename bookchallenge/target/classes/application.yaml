@@ -12,9 +12,9 @@ spring:
   datasource:
     username: user
 # uncomment the line below
-#    url: jdbc:mysql://localhost:3306/spring_db?createDatabaseIfNotExist=true&serverTimezone=UTC
+    url: jdbc:mysql://${MYSQL_DB_HOST}:${MYSQL_DB_PORT}/spring_db?createDatabaseIfNotExist=true&serverTimezone=UTC
 # Comment to the line below when use in localhost
-    url: jdbc:mysql://db:3306/spring_db?createDatabaseIfNotExist=true&serverTimezone=UTC
+#    url: jdbc:mysql://db:3306/spring_db?createDatabaseIfNotExist=true&serverTimezone=UTC
     password: nova
   jpa:
     show-sql: 'true'

@@ -26,6 +26,8 @@ services:
     environment:
       TZ: America/Sao_Paulo
       SPRING_BOOT_ENVIROMENT: Production
+      MYSQL_DB_HOST: db
+      MYSQL_DB_PORT: 3306
     volumes:
       - ./bookchallenge:/bookchallenge
       - ~/.m2:/root/.m2

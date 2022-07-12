@@ -176,6 +176,88 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Get_Reservation_2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "stayFrom",
+						"value": "2022-07-10",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/reservation/searchReservation?idReservation=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"reservation",
+						"searchReservation"
+					],
+					"query": [
+						{
+							"key": "idReservation",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cancel_Reservation_not_exists",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "stayFrom",
+						"value": "2022-07-10",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/reservation/cancel?id=15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"reservation",
+						"cancel"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "15"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
